@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color-body: #d5d1d1;
+    --color-texto: #666;
+    --color-calculadora: #383838;
+    --color-botones: #fefafa;
+    --color-botones-dos: rgba(245, 37, 37, 0.4);
+    --color-hover-botones: #797878;
+}
+
+body {
+    text-align: center;
+    font-family: 'Averia Serif Libre', serif;
+    height: 100%;
+    background-color: var(--colorFondo);
+    background-image: linear-gradient(90deg, transparent 79px,
+            rgba(245, 37, 37, 0.4) 79px, #abced4 81px, transparent 81px),
+        linear-gradient(#eee .1em, transparent .9em);
+    background-size: 100% 3em;
+}
+
+h1 {
+    color: rgba(98, 98, 98, 0.7);
+    margin-top: 4.5rem;
+    font-size: 4rem;
+}
+
+h2 {
+    margin-top: 3.1rem;
+    font-size: 2rem;
+    color: var(--color-texto);
+    margin-bottom: 3rem;
+}
+
+.calculadora {
+    width: 32rem;
+    margin: 0 auto;
+    background-color: var(--color-calculadora);
+    padding: 2rem;
+    border: 0.1rem solid;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 10px 0 #010101;
+}
+
+#pantalla {
+    width: 90%;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: right;
+    background-color: var(--color-body);
+}
+
+#pantalla:focus {
+    outline: none;
+}
+
+input[type="button"] {
+    width: 6rem;
+    height: 4rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    background-color: var(--color-botones);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+body input[type="button"]:last-child {
+    width: 13rem;
+    margin-right: 50%;
+    background-color: var(--color-body);
+}
+
+input[type="button"]:hover,input[type="button"]:last-child:hover {
+    background-color: var(--color-hover-botones);
+    color: var(--color-botones);
+}
+
+input[type="button"]:active,input[type="button"]:last-child:active {
+    box-shadow: 0px 1px 1px 1px #040404;
+    color: var(--color-botones-dos);
+}
+
+

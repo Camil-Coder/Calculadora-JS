@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora </title>
+    <link rel="shortcut icon" href="./img/icons8-calculator-color-120.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Calculadora en Javascript 📱</h1>
+    <h2>Por Camil-Code{.}</h2>
+    <div class="calculadora">
+        <input type="text" id="pantalla" readonly>  <!-- el atributo readonly indica que el campo es de solo lectura. --> 
+        <br><!-- Esto significa que el usuario no puede modificar el valor del campo, pero puede seleccionarlo y copiarlo. -->
+        <input  type="button" value="2" onclick="agregar('2')">
+        <input  type="button" value="1" onclick="agregar('1')">
+        <input  type="button" value="3" onclick="agregar('3')">
+        <input  type="button" value="+" onclick="agregar('+')">
+        <br>
+        <input  type="button" value="4" onclick="agregar('4')">
+        <input  type="button" value="5" onclick="agregar('5')">
+        <input  type="button" value="6" onclick="agregar('6')">
+        <input  type="button" value="-" onclick="agregar('-')">
+        <br>
+        <input  type="button" value="7" onclick="agregar('7')">
+        <input  type="button" value="8" onclick="agregar('8')">
+        <input  type="button" value="9" onclick="agregar('9')">
+        <input  type="button" value="*" onclick="agregar('*')">
+        <br>
+        <input  type="button" value="0" onclick="agregar('0')">
+        <input  type="button" value="." onclick="agregar('.')">
+        <input  type="button" value="/" onclick="agregar('/')">
+        <input type="button" value="=" onclick="calcular()">
+        <br>
+        <input type="button" value="BORRAR" onclick="borrar()">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</body>
+</html>
